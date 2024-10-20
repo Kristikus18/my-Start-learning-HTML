@@ -1,0 +1,3 @@
+During my web development studies, I created a learning project where I applied fundamental skills in HTML and CSS to build a web page. The project focused on using the box model, selectors, and media queries to ensure the page is responsive across various devices. All the styles were implemented with CSS, making the website visually appealing and functional.
+
+I used modern layout techniques like Flexbox and the Grid system to structure the elements correctly. The primary focus was on the design, structure, and proper use of background colors, rounded corners, and hover effects for links. The page was tested on multiple screens to optimize its display for mobile devices.
