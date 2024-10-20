@@ -1,0 +1,384 @@
+/* Базові стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9aa670; /* Фоновий колір сторінки */
+}
+
+/* Стилі для контейнера сторінки */
+.page-wrapper {
+    max-width: 1000px; /* Встановлює максимальну ширину рамки */
+    margin: 40px auto;  /* Центрує контейнер на сторінці і додає відступи зверху та знизу */
+    padding: 20px; /* Внутрішній відступ для контенту */
+}
+
+.caption-photo {
+    text-align: center; /* Вирівнює заголовок по центру */
+    font-style: italic; /* Робить текст курсивним */
+    font-size: 16px; /* Встановлює розмір шрифту на 16px */
+    color: #000000; /* Колір тексту */
+    margin: 10px 0 14.5px 0; /* Відступи: 10px зверху, 14.5px знизу */
+}  
+
+/* Стилі для секцій -щоб текст під фото виглядов правильно-*/ 
+.biography, .filmography {
+    padding: 20px 50px; /* Внутрішні відступи */
+    margin: 20px 0; /* Відступи зверху та знизу */
+}  
+
+.article-header, {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Стиль для зображення */
+.rounded-image {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.article {
+    padding: 30px 50px; /* Внутрішні відступи */
+    margin-top: 16px;
+    background-color: #ffffff; /* Білий фон */
+    border-top-left-radius: 10px; /* Заокруглення для верхнього лівого кута */
+    border-top-right-radius: 10px; /* Заокруглення для верхнього правого кута */
+}
+
+
+.ramka{
+    background-color: #E8F0CB;
+    border-radius: 10px;
+    padding-right: 21px;
+    padding-left: 21px;
+    padding-top: 24.5px;
+    padding-bottom: 10px;
+}
+header {
+    background-color: #e8f0cb; /* Колір фону для заголовка */
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #b0b795;
+    border-radius: 10px; /* Заокруглення країв рамки */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #000000; /* Колір тексту заголовка */
+}
+
+nav {
+    background-color: #e8f0cb; /* Колір фону для навігації */
+    padding: 10px;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #006EBE; /* Колір тексту посилань */
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    border: 1px 2px solid transparent; /* Додано рамку без стилю */   
+}
+
+nav a:hover {
+    background-color: #ffffff; /* Колір при наведенні */
+    
+   
+}
+
+/* Основний стиль для блоку */
+.meta-info {
+    display: flex; /* Використовуємо flex для вирівнювання елементів по горизонталі */
+    align-items: center; /* Вирівнюємо по вертикалі */
+    font-family: Arial, sans-serif; /* Встановлюємо шрифт */
+    font-size: 14px; /* Розмір шрифту */
+    color: #000000; /* Колір тексту */
+    background-color: #E9E9E9; /* Світло-сірий фон */
+    padding: 16px 8px; /* Відступи всередині блоку */
+    border-radius: 5px; /* Заокруглення країв */
+    margin-bottom: 16px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top:  10px;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px; /* Заокруглення для основного блоку */
+}
+
+/* Медіазапити для адаптивної верстки */
+@media (min-width: 420px) and (max-width: 620px) {
+    .rounded-image {
+        border-radius: 20px;
+    }
+}
+
+.rounded-image {
+    border-radius: 10px; /* Заокруглення для зображення */
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.general-info {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+/* Стиль для рамки зображення */
+.image-frame {
+
+    margin: 0 auto; /* Центрує зображення на сторінці */
+    width: auto; /* Забезпечує адаптивність зображення */
+    max-width: 100%; /* Не дозволяє зображенню виходити за межі контейнера */
+    padding: 0; /* Відсутність внутрішніх відступів */
+    background-color: #e8f0cb; /* Колір фону для рамки */
+    border: 5px solid #e8f0cb; /* Колір та ширина рамки */
+    border-radius: 10px; /* Заокруглення куточків рамки */
+}
+
+.full-width-image {
+    width: 100vw; /* Встановлює ширину зображення на 100% від ширини вікна браузера */
+    height: auto; /* Зберігає пропорції зображення */
+    display: block; /* Запобігає появі зайвого простору знизу */
+    border-radius: 50%; /* Додатково, якщо хочете зображення круглим */
+}
+
+h1, h2, ul {
+    margin: 0;
+    padding: 10px 0; /* Внутрішні відступи зверху та знизу для заголовків */
+    text-align: left; /* Вирівнюємо заголовки по лівому краю */
+    color: #000000; /* Заголовки кольору */
+    
+}
+
+/* Додаткове вирівнювання для блоків */
+.general-info, .biography, .filmography {
+    padding: 20px; /* Забираємо зайві відступи */
+    margin: 0px; /* Забираємо зайві зовнішні відступи */
+}
+
+p {
+    margin: 0 0 10px 0; /* Відступ між абзацами */
+    line-height: 1.6; /* Інтерліньяж */
+    text-align: left; /* Вирівнювання тексту по лівому краю */
+    color: #000000; /* Заголовки кольору */
+}
+
+/* Вирівнювання заголовків по лівому краю */
+.left-aligned-heading {
+    text-align: left; /* Вирівнює заголовок по лівому краю */
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+.biography, .filmography {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.filmography ol {
+    padding: 0 20px;
+}
+
+.filmography li {
+    border-bottom: 1px solid #DBE4BC;
+    padding: 5px 0;
+}
+
+.filmography li:last-child {
+    border-bottom: none;
+    background-color: #e1d9af; /* Виділення останнього елементу */
+}
+
+/* Стилі для футера з класом class1 */  /* у мене тут дійсно якась проблема я не можу це вирішити */
+.date1 {
+    text-align: center; /* Вирівнює текст по центру */
+    background-color: #E8F0CB; /* Фоновий колір футера */
+    color: #000000; /* Колір тексту */
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 34px 0;
+    width: 100%; /* Футер займає всю ширину сторінки */
+}
+
+
+
+/* Стиль для таблиці */
+.filmography-list {
+    width: 100%; /* Займає всю ширину контейнера */
+    border-collapse: collapse; /* Об'єднує рамки сусідніх комірок */
+    padding-top: 8px ; /* Відступ зверху та знизу */
+    font-family: Arial, sans-serif; /* Шрифт таблиці */
+}
+
+.filmography-list li {
+    text-align: left; /* Вирівнювання заголовка по лівому краю */
+    font-size: 1.2em; /* Розмір шрифту заголовка */
+    padding: 10px; /* Відступи всередині заголовка */
+}
+
+.filmography-list li {
+    padding: 10px; /* Відступи всередині комірок */
+    border-bottom: 1px solid #dddddd; /* Рамка під комірками */
+}
+
+/* Кольори для чергування рядків */
+.filmography-list li:nth-child(odd) {
+    background-color: #ffffff; /*  Білий колір для непарних рядків */
+}
+
+.filmography-list li:nth-child(even) {
+    background-color: #F9FEE7; /* Світло-зелений колір для парних рядків */
+}
+
+.filmography-list li:nth-child(3) {
+    background-color: #fff5f5; /* Світло-рожевий колір для 3-го рядка */
+}
+
+nav {
+    display: inline-block;
+    background-color: #e8f0cb;
+    padding: 10px;
+}
+
+
+a:visited {
+    color: #800080; /* Вибираємо колір для відвіданих посилань */
+}
+
+a:hover {
+    border-radius: 5px; /* Додаємо заокруглення при наведенні */
+}
+
+@media (max-width: 620px) {
+    .rounded-image {
+        border-radius: 30px;
+    }
+    a:hover {
+        border-radius: 0px; /* У мобільній версії без заокруглень */
+    }
+}
+
+/* Назва меню для мобільної версії */
+@media (max-width: 620px) {
+    nav::before {
+        content: "Меню";
+        display: block;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rounded-image {
+        border-radius: 30px;
+    }
+    .main-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .filmography li {
+        font-size: 0.9em;
+    }
+}
+
+/* Стиль для посилань */
+a:visited {
+    color: #800080;
+}
+
+a:hover {
+    border-radius: 5px;
+}
+
+@media (max-width: 620px) {
+    a:hover {
+        border-radius: 0px;
+    }
+}
+
+/* Стиль для останнього елемента списку */
+.filmography-list li:last-child {
+    text-decoration: none;
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #006EBE;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+}
+
+.meta-info {
+    display: flex;
+    align-items: center;
+    background-color: #E9E9E9;
+    padding: 16px 8px;
+    border-radius: 5px;
+    margin: 10px 30px;
+}
+
+/* Стиль для футера */
+.date1 {
+    text-align: center;
+    background-color: #E8F0CB;
+    padding: 34px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+}
